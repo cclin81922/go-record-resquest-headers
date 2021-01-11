@@ -15,6 +15,6 @@ func headers(w http.ResponseWriter, req *http.Request) {
 
 func HttpServe() {
     http.HandleFunc("/", headers)
-    go http.ListenAndServe(fmt.Sprintf(":%d",port), nil)
+    go http.ListenAndServe(fmt.Sprintf(":%d",*port), nil)
     fmt.Println(fmt.Sprintf("HTTP server port: %d",*port))
 }
