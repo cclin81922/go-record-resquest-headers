@@ -1,7 +1,7 @@
 package main
 
 import (
-    "github.com/namsral/flag"
+    "github.com/cclin81922/go-3rd-party/go-flag"
 )
 
 var (
